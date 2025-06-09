@@ -18,6 +18,9 @@ def create_app():
     from flask_ckeditor import CKEditor
     ckeditor = CKEditor(app)
     
+    import locale 
+    locale.setlocale(locale.LC_ALL, 'es_ES')
+
     #Registrar las vistas
     from blogr import home
     app.register_blueprint(home.bp)
