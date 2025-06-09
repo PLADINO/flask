@@ -1,0 +1,14 @@
+<!-- Heradamos de la plantilla base.html-->
+{% extends 'base.html' %}
+
+
+{% block title %} Bienvenido {% endblock %}
+
+{% block content %}
+<!-- h1>Página de Portafolio</h1 -->
+<!-- Incluir menu de navegación-->
+{% include 'nav.html' %}
+
+{% include 'home.html' %}
+
+{% endblock %}
